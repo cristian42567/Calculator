@@ -5,6 +5,10 @@ const buttonOperators = document.querySelectorAll('.operator');
 
 const display = new Display(displayPreviusValue, displayCurrentValue);
 
-buttonNumbers.forEach(button =>{
-    button.addEventListener('click', () =>display.addNumber(button.innerHTML));
+buttonNumbers.forEach(button => {
+    button.addEventListener('click', () => display.addNumber(button.innerHTML));
+});
+
+buttonOperators.forEach(button => {
+    button.addEventListener('click', () => display.compute(button.value))
 });
