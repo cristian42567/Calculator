@@ -6,7 +6,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #224870;
+    background-color: #0B2447;
 }
 
 .container {
@@ -17,26 +17,30 @@ body {
 }
 
 .calculator {
+    background-color: #576CBC;
     display: grid;
     grid-template-columns: repeat(4, 75px);
     grid-template-rows: 160px repeat(5, 75px);
-    background-color: #00916e;
     padding: 15px;
     border-radius: 32px;
 }
 
 button {
+    background-color: #8aa0f7;
     cursor: pointer;
     margin: 5px;
     padding: 0;
-    border-radius: 32px;
+    border-radius: 18px;
     font-size: 1.5rem;
-    border: 1px solid black;
-    background-color: #00916e;
+    border: none;
+}
+
+button:hover{
+    background-color: #686c8b59;
 }
 
 button:active {
-    background-color: #006f54;
+    background-color: #2d2e3b59;
 }
 
 .display {
@@ -46,8 +50,8 @@ button:active {
     margin: 10px 10px 20px;
     flex-direction: column;
     align-items: flex-end;
-    background-color: #363636;
-    border-radius: 32px;
+    background-color: #19376D;
+    border-radius: 18px;
     text-align: right;
     justify-content: space-between;
     word-break: break-all;
@@ -55,6 +59,7 @@ button:active {
 
 .col-2 {
     grid-column: span 2;
+    background-color: #19376D;
 }
 
 #current-value {
