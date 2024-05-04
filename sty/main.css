@@ -35,12 +35,12 @@ button {
     border: none;
 }
 
-button:hover{
-    background-color: #686c8b59;
-}
-
 button:active {
     background-color: #2d2e3b59;
+}
+
+button:focus {
+    outline: none;
 }
 
 .display {
