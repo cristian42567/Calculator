@@ -3,13 +3,27 @@ class Display{
         this.displayCurrentValue = displayCurrentValue;
         this.displayPreviusValue = displayPreviusValue;
         this.calculating = new Calculator();
+        this.typeOperating = undefined;
         this.currentValue = '';
         this.previusValue = '';
     }
 
-    addNumber(number){
-        this.currentValue = this.currentValue + number;
+    delete(){
+        this.currentValue = this.currentValue.toString().slice(0,-1);
         this.printValues();
+    }
+
+    deleteAll(){
+        this.currentValue = '';
+        this.previusValue = '';
+        this.typeOperating = undefined;
+        this.printValues();
+    }
+
+    addNumber(number){
+        if(number === ',' && this.currentValue.includes(',')) return
+        this.currentValue = this.currentValue.toString() + number.toString();
+        this.printValues(); 
     }
 
     printValues(){
