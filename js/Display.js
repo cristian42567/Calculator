@@ -35,7 +35,7 @@ class Display {
     }
 
     addNumber(number) {
-        if (number === ',' && this.currentValue.includes(',')) return
+        if (number === '.' && this.currentValue.includes('.')) return
         this.currentValue = this.currentValue.toString() + number.toString();
         this.printValues();
     }
